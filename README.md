@@ -26,7 +26,9 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) framework API starter repository.
+
+For reference, authentication architecture was inspired by [this blog post](https://praz.dev/posts/authentication-nestjs-mongodb/).
 
 ## Installation
 
@@ -58,6 +60,15 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
+```
+
+## Environment Variables (local dev)
+
+Create a `.env` file in this project's root directory and add the following content to it:
+
+```
+DATABASE_HOST=mongodb://localhost/your-db-name
+SESSION_SECRET=YOURSESSIONSECRET
 ```
 
 ## Support
