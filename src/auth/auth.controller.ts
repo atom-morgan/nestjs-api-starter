@@ -25,7 +25,6 @@ export class AuthController {
   @UseGuards(JwtAuthGuard)
   @Get('me')
   getMe(@Request() req) {
-    console.log('env ', process.env.DATABASE_HOST);
     return req.user;
   }
 }
